@@ -33,7 +33,8 @@ import winnerXD.pageobjects.ProductCatalogue;
 
 public class SubmitOrderTest extends BaseTest {
 	
-
+	//Just to check git status
+	
 	@Test(dataProvider = "getData",groups = {"Purchase"})
 	public void SubmitOrder(HashMap<String, String> input) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
