@@ -32,7 +32,7 @@ import winnerXD.pageobjects.OrderPage;
 import winnerXD.pageobjects.ProductCatalogue;
 
 public class SubmitOrderTest extends BaseTest {
-	
+	//comments 1
 	
 	@Test(dataProvider = "getData",groups = {"Purchase"})
 	public void SubmitOrder(HashMap<String, String> input) throws IOException, InterruptedException {
