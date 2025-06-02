@@ -18,7 +18,7 @@ public class ConfirmationPage extends AbstractComponent {
 	}
 	
 	@FindBy(xpath = "//h1[@class='hero-primary']")
-	WebElement confirmMsg;
+	private WebElement confirmMsg;
 	
 	public String getConfirmationMessage() {
 		return confirmMsg.getText();

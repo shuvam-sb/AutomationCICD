@@ -21,7 +21,7 @@ public class OrderPage extends AbstractComponent{
 	}
 	
 	@FindBy(xpath = "//tr//td[2]")
-	List<WebElement> productNames;
+	private List<WebElement> productNames;
 	
 	public Boolean verifyOrderDisplay(String productName) {
 		Boolean flag = productNames.stream().anyMatch(product->product.getText().equalsIgnoreCase(productName));

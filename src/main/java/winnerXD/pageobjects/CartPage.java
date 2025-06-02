@@ -20,10 +20,10 @@ public class CartPage extends AbstractComponent{
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(css = ".totalRow button")
-	WebElement checkOutBtn;
+	private WebElement checkOutBtn;
 	
 	@FindBy(xpath = "//div[@class='cartSection']//h3")
-	List<WebElement> productsTitles;
+	private List<WebElement> productsTitles;
 	
 	public Boolean verifyProductDisplay(String productName) {
 		

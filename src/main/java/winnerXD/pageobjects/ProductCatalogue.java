@@ -21,12 +21,12 @@ public class ProductCatalogue extends AbstractComponent {
 	}
 
 	@FindBy(xpath="//div[contains(@class, 'mb-3')]")
-	List <WebElement> products;
-	By productsBy = By.xpath("//div[contains(@class, 'mb-3')]");
-	By addToCart = By.xpath(".//div[@class='card-body']//button[last()]");
-	By toastMessage = By.xpath("//div[@id='toast-container']");
-	By spinner = By.cssSelector(".ng-animating");
-	By spinner_S = By.cssSelector(".ngx-spinner-overlay");
+	private List <WebElement> products;
+	private By productsBy = By.xpath("//div[contains(@class, 'mb-3')]");
+	private By addToCart = By.xpath(".//div[@class='card-body']//button[last()]");
+	private By toastMessage = By.xpath("//div[@id='toast-container']");
+	private By spinner = By.cssSelector(".ng-animating");
+	private By spinner_S = By.cssSelector(".ngx-spinner-overlay");
 			
 
 	public List<WebElement> getProductList() {

@@ -18,13 +18,13 @@ public class CheckOutPage extends AbstractComponent {
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath = "//input[@placeholder='Select Country']")
-	WebElement sendCtxt;
+	private WebElement sendCtxt;
 	
 	@FindBy(xpath = "//button[contains(@class,' list-group-item')]//span")
-	List<WebElement> countries;
+	private List<WebElement> countries;
 	
 	@FindBy(xpath = "//a[contains(text(), 'Place Order')]")
-	WebElement placeOrder;
+	private WebElement placeOrder;
 	
 	
 	public void selectCountry(String countryName) {

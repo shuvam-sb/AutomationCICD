@@ -16,13 +16,13 @@ public class LandingPage extends AbstractComponent{
 	}
 	
 	@FindBy(xpath="//input[@id='userEmail']")
-	WebElement userEmail;
+	private WebElement userEmail;
 	@FindBy(xpath = "//input[@id='userPassword']")
-	WebElement userPassword;
+	private WebElement userPassword;
 	@FindBy(xpath = "//input[@id='login']")
-	WebElement submit;
+	private WebElement submit;
 	@FindBy(css = "[class*='flyInOut']")
-	WebElement errorMessage;
+	private WebElement errorMessage;
 	
 	public String getErrorMessage() {
 		waitForElementToAppear(errorMessage);
